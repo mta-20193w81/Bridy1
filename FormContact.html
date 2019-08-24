@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/WeddingStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+	<title>formContact</title>
+</head>
+<body style="background-color: #fff5cc;">
+	<header>
+		<div class="header">
+		<h1> BANANOT-Wedding Dresses </h1>
+		</div>
+	</header>
+		<div class="navi">
+		    	 <button type="button" class="btn btn-primary">
+		     <a href=mainPage.html>Home Page</a></button>   
+		     
+		<button type="button" class="btn btn-secondary"><a href=aboutUs.html>About</a></button>
+		
+		<button type="button" class="btn btn-success"><a href=Areas.html>
+		    Stores</a></button>
+		<button type="button" class="btn btn-info"><a href=FormContact.html>Suppliers</a></button>
+		</div>
+
+			<figure class="mainP" >
+			<center>
+			<h2> To register as a supplier for advertising on our site</h2>
+			</center>
+			 </figure>
+<form class="form-group"  action="\send_details.php" method="post">
+
+         <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" class="form-control" name="namei" required>
+          </div>
+          <div class="form-group">
+            <label for="comp">Your Company Name:</label>
+            <input type="text" class="form-control" name="compi" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" name="emaili" required
+            patten="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+             placeholder="israel@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number: </label>
+            <input type="text" class="form-control" name="phonei"  
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+					   placeholder="123-456-7890"
+					   required>
+          </div>
+
+   
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <br><br>
+          <button type="reset" class="btn btn-primary">reset</button>
+ </form>
+        
+        <script>
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    var forms = document.getElementsByClassName('needs-validation');
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+<footer class="col-12 bordermain" style="left: 0px; top: 10px;"><b>Contact Us</b><br />
+Phone:03-03030357<br />
+Addresses: Jerusalem Boulevard, Tel Aviv-Jaffa<br />
+Email: <mark>MTL@gmail.com<mark> </mark></mark> <br> 
+<sub> &copy; 2019 Wedding site. All rights reserved </sub>
+</footer>
+	</body>
+	</html>
+	
